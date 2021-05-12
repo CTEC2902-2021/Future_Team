@@ -19,6 +19,6 @@ namespace FootballMinimalMVCProject
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         } 
-        //ManUnited club is cool
+        
     }
 }
