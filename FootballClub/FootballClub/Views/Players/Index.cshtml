@@ -1,0 +1,113 @@
+﻿@model IEnumerable<FootballClub.Models.Player>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TeamName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player6)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player7)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player8)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player9)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player10)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player11)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player7)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player8)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player9)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player10)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Player11)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.PlayerId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.PlayerId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.PlayerId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
