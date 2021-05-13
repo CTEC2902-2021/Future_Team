@@ -7,6 +7,7 @@ namespace FootballClub.Models
 {
     public class Football
     {
+        //I created a table for the d
         public virtual int FootballId { get; set; }
         public virtual string Team { get; set; }
         public virtual int TeamId { get; set; }
