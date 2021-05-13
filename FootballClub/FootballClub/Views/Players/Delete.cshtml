@@ -1,0 +1,136 @@
+﻿@model FootballClub.Models.Player
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Player</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TeamName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TeamName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TeamId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TeamId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player1)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player1)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player2)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player2)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player3)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player3)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player4)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player4)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player5)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player5)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player6)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player6)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player7)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player7)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player8)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player8)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player9)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player9)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player10)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player10)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Player11)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Player11)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>
