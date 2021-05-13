@@ -5,8 +5,8 @@ using System.Web;
 
 namespace FootballClub.Models
 {
-    public class Player
-    {
+	public class Player
+	{
         public virtual int PlayerId { get; set; }
         public virtual string TeamName { get; set; }
         public virtual int TeamId { get; set; }
