@@ -7,6 +7,7 @@ namespace FootballClub.Models
 {
     public class Teams
     {
+        //Prodives the table database with a foreign key
         public virtual int TeamsId { get; set; }
     }
 }

@@ -7,6 +7,7 @@ namespace FootballClub.Models
 {
 	public class Player
 	{
+        //This code is used to create the tables in the database
         public virtual int PlayerId { get; set; }
         public virtual string TeamName { get; set; }
         public virtual int TeamId { get; set; }
